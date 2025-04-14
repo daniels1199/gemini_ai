@@ -33,11 +33,11 @@ for message in st.session_state.chat.history:
         st.markdown(message.parts[0].text)
 
 if prompt := st.chat_input("Digite algo..."):
-    with st.chat_message("user", avatar='🧑‍💻'):
+    with st.chat_message("user"):
         st.markdown(prompt)
 
     response = st.session_state.chat.send_message(prompt)
     
-    with st.chat_message("assistant", avatar='🤖'):
+    with st.chat_message("assistant"):
         st.markdown(response.text)
         
