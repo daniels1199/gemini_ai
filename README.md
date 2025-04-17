@@ -5,4 +5,4 @@ Requirements:
 * streamlit
 * google-generativeai
 
-To run this application locally just type `streamlit run app.py` in your cmd
+To run this application locally just type `streamlit run app.py` in your terminal
